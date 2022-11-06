@@ -4,6 +4,9 @@ project(project1-2)
 
 set(SOURCES 
     src/main.cpp 
+    src/util.cpp
+    src/chess_board.cpp
+    src/menu.cpp
 )
 
 set(CXX_STANDARD_REQUIRED ON)

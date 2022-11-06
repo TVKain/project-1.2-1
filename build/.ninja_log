@@ -1,0 +1,6 @@
+# ninja log v5
+26	1556	1667751142379832000	CMakeFiles/project1-2.dir/src/util.cpp.o	8c1aeed813a15331
+23	1760	1667751142590105100	CMakeFiles/project1-2.dir/src/main.cpp.o	84ffea822c4f444d
+36	1786	1667751142611252100	CMakeFiles/project1-2.dir/src/menu.cpp.o	9025c904d57388a1
+30	2112	1667751142940763000	CMakeFiles/project1-2.dir/src/chess_board.cpp.o	e1ac9e6c43e3c76e
+2124	2852	1667751143688516100	main	bbddd4d6f215bae1

@@ -117,8 +117,6 @@ namespace ds {
         }
 
 
-
-        
         /* Operators */
 
         /* 

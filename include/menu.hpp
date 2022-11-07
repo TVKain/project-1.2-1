@@ -29,6 +29,7 @@ public:
     void input_initial_location();
     void run_solve_knight_tour();
     void run_animate_knight_tour();
+    void start_menu();
 };
 
 

@@ -13,18 +13,18 @@ int menu::get_choice() {
 
 void menu::start_menu() {
     for (;;) {
-        m.print_menu();
-        m.input_choice("Enter your choice: ");
+        print_menu();
+        input_choice("Enter your choice: ");
         
-        if (m.get_choice() == 1) {
-            m.input_board_length();
-        } else if (m.get_choice() == 2) {
-            m.input_initial_location();
-        } else if (m.get_choice() == 3) {
-            m.run_solve_knight_tour();
-        } else if (m.get_choice() == 4) {   
-            m.run_animate_knight_tour();
-        } else if (m.get_choice() == 5) {
+        if (get_choice() == 1) {
+            input_board_length();
+        } else if (get_choice() == 2) {
+            input_initial_location();
+        } else if (get_choice() == 3) {
+            run_solve_knight_tour();
+        } else if (get_choice() == 4) {   
+            run_animate_knight_tour();
+        } else if (get_choice() == 5) {
             std::cout << "Exiting..." << std::endl;
             break;
         }

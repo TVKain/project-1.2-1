@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/users/tvkain/desktop/Project-1.2/libs/test
+# Install script for directory: /mnt/c/users/tvkain/desktop/project-1.2/libs/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

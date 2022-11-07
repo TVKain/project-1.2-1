@@ -34,7 +34,7 @@ include rules.ninja
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/c/users/tvkain/desktop/Project-1.2/build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /mnt/c/users/tvkain/desktop/project-1.2/build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -45,7 +45,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/c/users/tvkain/desktop/Project-1.2/build && /usr/bin/cmake -S/mnt/c/users/tvkain/desktop/Project-1.2 -B/mnt/c/users/tvkain/desktop/Project-1.2/build
+  COMMAND = cd /mnt/c/users/tvkain/desktop/project-1.2/build && /usr/bin/cmake -S/mnt/c/users/tvkain/desktop/project-1.2 -B/mnt/c/users/tvkain/desktop/project-1.2/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -115,7 +115,7 @@ build main: CXX_EXECUTABLE_LINKER__project1-2 CMakeFiles/project1-2.dir/src/main
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /mnt/c/users/tvkain/desktop/Project-1.2/CMakeLists.txt
+# /mnt/c/users/tvkain/desktop/project-1.2/CMakeLists.txt
 # =============================================================================
 
 
@@ -123,7 +123,7 @@ build main: CXX_EXECUTABLE_LINKER__project1-2 CMakeFiles/project1-2.dir/src/main
 # Utility command for rebuild_cache
 
 build test/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/c/users/tvkain/desktop/Project-1.2/build/test && /usr/bin/cmake -S/mnt/c/users/tvkain/desktop/Project-1.2 -B/mnt/c/users/tvkain/desktop/Project-1.2/build
+  COMMAND = cd /mnt/c/users/tvkain/desktop/project-1.2/build/test && /usr/bin/cmake -S/mnt/c/users/tvkain/desktop/project-1.2 -B/mnt/c/users/tvkain/desktop/project-1.2/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -135,7 +135,7 @@ build test/rebuild_cache: phony test/CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build test/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/c/users/tvkain/desktop/Project-1.2/build/test && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /mnt/c/users/tvkain/desktop/project-1.2/build/test && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -143,7 +143,7 @@ build test/edit_cache: phony test/CMakeFiles/edit_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /mnt/c/users/tvkain/desktop/Project-1.2/libs/CMakeLists.txt
+# /mnt/c/users/tvkain/desktop/project-1.2/libs/CMakeLists.txt
 # =============================================================================
 
 
@@ -151,7 +151,7 @@ build test/edit_cache: phony test/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build test/algorithms/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/c/users/tvkain/desktop/Project-1.2/build/test/algorithms && /usr/bin/cmake -S/mnt/c/users/tvkain/desktop/Project-1.2 -B/mnt/c/users/tvkain/desktop/Project-1.2/build
+  COMMAND = cd /mnt/c/users/tvkain/desktop/project-1.2/build/test/algorithms && /usr/bin/cmake -S/mnt/c/users/tvkain/desktop/project-1.2 -B/mnt/c/users/tvkain/desktop/project-1.2/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -163,7 +163,7 @@ build test/algorithms/rebuild_cache: phony test/algorithms/CMakeFiles/rebuild_ca
 # Utility command for edit_cache
 
 build test/algorithms/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/c/users/tvkain/desktop/Project-1.2/build/test/algorithms && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /mnt/c/users/tvkain/desktop/project-1.2/build/test/algorithms && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -171,7 +171,7 @@ build test/algorithms/edit_cache: phony test/algorithms/CMakeFiles/edit_cache.ut
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /mnt/c/users/tvkain/desktop/Project-1.2/libs/CMakeLists.txt
+# /mnt/c/users/tvkain/desktop/project-1.2/libs/CMakeLists.txt
 # =============================================================================
 
 
@@ -179,7 +179,7 @@ build test/algorithms/edit_cache: phony test/algorithms/CMakeFiles/edit_cache.ut
 # Utility command for rebuild_cache
 
 build test/data_structures/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/c/users/tvkain/desktop/Project-1.2/build/test/data_structures && /usr/bin/cmake -S/mnt/c/users/tvkain/desktop/Project-1.2 -B/mnt/c/users/tvkain/desktop/Project-1.2/build
+  COMMAND = cd /mnt/c/users/tvkain/desktop/project-1.2/build/test/data_structures && /usr/bin/cmake -S/mnt/c/users/tvkain/desktop/project-1.2 -B/mnt/c/users/tvkain/desktop/project-1.2/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -191,7 +191,7 @@ build test/data_structures/rebuild_cache: phony test/data_structures/CMakeFiles/
 # Utility command for edit_cache
 
 build test/data_structures/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/c/users/tvkain/desktop/Project-1.2/build/test/data_structures && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /mnt/c/users/tvkain/desktop/project-1.2/build/test/data_structures && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -199,7 +199,7 @@ build test/data_structures/edit_cache: phony test/data_structures/CMakeFiles/edi
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /mnt/c/users/tvkain/desktop/Project-1.2/libs/CMakeLists.txt
+# /mnt/c/users/tvkain/desktop/project-1.2/libs/CMakeLists.txt
 # =============================================================================
 
 
@@ -207,7 +207,7 @@ build test/data_structures/edit_cache: phony test/data_structures/CMakeFiles/edi
 # Utility command for rebuild_cache
 
 build test/test/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/c/users/tvkain/desktop/Project-1.2/build/test/test && /usr/bin/cmake -S/mnt/c/users/tvkain/desktop/Project-1.2 -B/mnt/c/users/tvkain/desktop/Project-1.2/build
+  COMMAND = cd /mnt/c/users/tvkain/desktop/project-1.2/build/test/test && /usr/bin/cmake -S/mnt/c/users/tvkain/desktop/project-1.2 -B/mnt/c/users/tvkain/desktop/project-1.2/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -219,7 +219,7 @@ build test/test/rebuild_cache: phony test/test/CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build test/test/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/c/users/tvkain/desktop/Project-1.2/build/test/test && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /mnt/c/users/tvkain/desktop/project-1.2/build/test/test && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -344,35 +344,35 @@ build project1-2: phony main
 # =============================================================================
 
 #############################################
-# Folder: /mnt/c/users/tvkain/desktop/Project-1.2/build
+# Folder: /mnt/c/users/tvkain/desktop/project-1.2/build
 
 build all: phony main
 
 # =============================================================================
 
 #############################################
-# Folder: /mnt/c/users/tvkain/desktop/Project-1.2/build/test
+# Folder: /mnt/c/users/tvkain/desktop/project-1.2/build/test
 
 build test/all: phony test/algorithms/all test/data_structures/all test/test/all
 
 # =============================================================================
 
 #############################################
-# Folder: /mnt/c/users/tvkain/desktop/Project-1.2/build/test/algorithms
+# Folder: /mnt/c/users/tvkain/desktop/project-1.2/build/test/algorithms
 
 build test/algorithms/all: phony
 
 # =============================================================================
 
 #############################################
-# Folder: /mnt/c/users/tvkain/desktop/Project-1.2/build/test/data_structures
+# Folder: /mnt/c/users/tvkain/desktop/project-1.2/build/test/data_structures
 
 build test/data_structures/all: phony
 
 # =============================================================================
 
 #############################################
-# Folder: /mnt/c/users/tvkain/desktop/Project-1.2/build/test/test
+# Folder: /mnt/c/users/tvkain/desktop/project-1.2/build/test/test
 
 build test/test/all: phony test/test/merge_sort_test test/test/insertion_sort_test test/test/array_list_test
 

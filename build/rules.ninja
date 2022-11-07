@@ -99,7 +99,7 @@ rule CXX_EXECUTABLE_LINKER__array_list_test
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/bin/cmake -S/mnt/c/users/tvkain/desktop/Project-1.2 -B/mnt/c/users/tvkain/desktop/Project-1.2/build
+  command = /usr/bin/cmake -S/mnt/c/users/tvkain/desktop/project-1.2 -B/mnt/c/users/tvkain/desktop/project-1.2/build
   description = Re-running CMake...
   generator = 1
 

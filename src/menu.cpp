@@ -6,25 +6,20 @@
 #include <string>
 #include <utility>
 
-
-int menu::get_choice() {
-    return choice;
-}
-
 void menu::start_menu() {
     for (;;) {
         print_menu();
         input_choice("Enter your choice: ");
         
-        if (get_choice() == 1) {
+        if (choice == 1) {
             input_board_length();
-        } else if (get_choice() == 2) {
+        } else if (choice == 2) {
             input_initial_location();
-        } else if (get_choice() == 3) {
-            run_solve_knight_tour();
-        } else if (get_choice() == 4) {   
-            run_animate_knight_tour();
-        } else if (get_choice() == 5) {
+        } else if (choice == 3) {
+            run_knight_tour_solve();
+        } else if (choice == 4) {   
+            run_animate_solution();
+        } else if (choice == 5) {
             std::cout << "Exiting..." << std::endl;
             break;
         }
@@ -107,7 +102,7 @@ void menu::input_initial_location() {
     init_location_set = true;
 }
 
-void menu::run_solve_knight_tour() {
+void menu::run_knight_tour_solve() {
     if (!board_size_set) {
         std::cout << "Chess board size is not set" << std::endl;
         return;
@@ -127,13 +122,13 @@ void menu::run_solve_knight_tour() {
     }
 }
 
-void menu::run_animate_knight_tour() {
+void menu::run_animate_solution() {
     if (!knight_tour_solution_ready) {
         std::cout << "Knight tour solution is not ready or there is no solution" << std::endl;
         return;
     }
 
-    cb.knight_tour_solution_animate(1200);
+    cb.animate_solution(1200);
 }
 
 void menu::print_menu() {

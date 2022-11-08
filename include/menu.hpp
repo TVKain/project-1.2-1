@@ -21,14 +21,12 @@ public:
     menu() :    choice(0), cb(1, 1), 
                 board_size_set(false), init_location_set(false), 
                 knight_tour_solution_ready(false) {}
-
-    int get_choice();
     void print_menu();
     void input_choice(std::string);
     void input_board_length();
     void input_initial_location();
-    void run_solve_knight_tour();
-    void run_animate_knight_tour();
+    void run_knight_tour_solve();
+    void run_animate_solution();
     void start_menu();
 };
 

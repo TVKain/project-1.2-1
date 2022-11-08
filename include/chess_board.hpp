@@ -10,39 +10,32 @@
 
 class chess_board {
 private:
-    ds::array_list<ds::array_list<int>> board;
+    typedef std::pair<int, int> coordinate;
+
+    ds::array_list<coordinate> solution;
     int row_length;
     int column_length;
 
     
-
     /* ************************************************************
-     * @brief: Solve knight tour using backtracking 
-     * @params: 
-     *          std::pair<int,int>  indicates the initial location
-     *          int                 indicates the current move
-     * @return boolean: 
-     *          true if there is a solution
-     *          false otherwise
-     * *************************************************************/
-    bool knight_tour_solve(std::pair<int, int>, int);
-
-    /* *************************************************
-     * @brief: Draw chess board with unicode characters
-     * ************************************************* */
-    void draw_chess_board(ds::array_list<ds::array_list<int>> &);
+     * @brief: Draw a frame of the solution with unicode characters
+     * ************************************************************ */
+    void draw_solution_frame(ds::array_list<ds::array_list<int>>);
 
 
-       /* *******************************************************
+    /* *******************************************************
      * @brief: calculate possible moves from current position 
      * @params: 
-     *        std::pair<int, int> 
-     *        first indicates the row index
-     *        second indicates the column index
+     *        std::array_list<coordinate> 
+     *             Keeps track of moves that have been made 
+     *        coordinate 
+     *             first indicates the row index
+     *             second indicates the column index
      * @return: 
-     *        An array of std::pair<int,int> of possible moves
+     *        ds::array_list<coordinate> contains all possible moves
      * ******************************************************* */
-    ds::array_list<std::pair<int, int>> calculate_possible_moves(std::pair<int, int>);
+    ds::array_list<coordinate> calculate_possible_moves(ds::array_list<coordinate>, coordinate);
+
 public:
     /* Getters for row and column length */
     int get_row_length();
@@ -58,36 +51,34 @@ public:
 
     /* ********************************************************
      * @brief: resize chess board to m x n board, 
-     *         it will reset content of board
      * @params: 
      *      m: number of rows
      *      n: number of columns
      * ******************************************************** */
     void resize_board(int m, int n);
-
- 
-
+    
     /* ****************************************
-     * @brief: Overload << operator for output
-     * ****************************************/
+    * @brief: Overload << operator for output
+    * ***************************************** */
     friend std::ostream& operator<<(std::ostream &os, const chess_board &cb);
-
+    
     /* *************************************************************
-     * @brief: Initialize 2d array and location to solve knight tour
+     * @brief: Solve knight tour's problem
      * @params: std::pair<int,int> indicates the initial location
      * @return boolean: 
      *          true if there is a solution
      *          false otherwise
+     * @side-effects: 
+     *          history of moves is stored in the field 'solution'
      * *************************************************************/
-    bool knight_tour_solve(std::pair<int, int>);
-
+    bool knight_tour_solve(coordinate);
 
     /* ***************************************
-    * @brief: Simulate knight tour solution
+    * @brief: Animate knight tour solution
     * @params:
     *      sleep_time: time between each move
     * *************************************** */
-    void knight_tour_solution_animate(unsigned int sleep_time);
+    void animate_solution(int sleep_time);
 };
 
 

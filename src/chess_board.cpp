@@ -145,9 +145,6 @@ void chess_board::draw_solution_frame(ds::array_list<ds::array_list<int>> board)
         }
         std::cout << std::endl;
 
-        // Draw the top of the box 
-        //│\u2002" << " ♞" <<"\u2002│
-
         if (i == row_length - 1) {
             std::cout << "└────";
             for (int j = 0; j < column_length - 2; ++j) {

@@ -27,15 +27,17 @@ void chess_board::resize_board(int m, int n) {
     column_length = n;
 }
 
-ds::array_list<chess_board::coordinate> chess_board::calculate_possible_moves(ds::array_list<chess_board::coordinate> made_moves, chess_board::coordinate current_coord) {
+ds::array_list<chess_board::coordinate> chess_board::calculate_possible_moves(ds::array_list<chess_board::coordinate> current_coordinates) {
     ds::array_list<coordinate> possible_offsets = { {1, 2}, {2, 1}, {2, -1}, {1, -2}, {-1, -2}, {-2, -1}, {-2, 1}, {-1, 2} };
     ds::array_list<coordinate> possible_moves; 
+
+    auto current_coord = current_coordinates.back();
 
     for (const auto &offset : possible_offsets) {
         auto move = std::make_pair(offset.first + current_coord.first, offset.second + current_coord.second);
 
         bool first_pred = move.first >= 0 && move.first < row_length && move.second >= 0 && move.second < column_length;
-        bool second_pred = std::find(made_moves.begin(), made_moves.end(), move) == made_moves.end();
+        bool second_pred = std::find(current_coordinates.begin(), current_coordinates.end(), move) ==  current_coordinates.end();
 
         if (first_pred && second_pred) {
             possible_moves.push_back(move);
@@ -47,35 +49,28 @@ ds::array_list<chess_board::coordinate> chess_board::calculate_possible_moves(ds
 
 
 bool chess_board::knight_tour_solve(coordinate init_coord) {
-    ds::array_list<std::pair<ds::array_list<coordinate>, coordinate>> stack;
+    ds::array_list<ds::array_list<coordinate>> stack;
 
-    auto init_moves = calculate_possible_moves(ds::array_list<coordinate>(), init_coord);
-
-    for (const auto &init_move : init_moves) {
-        stack.push_back(std::make_pair(ds::array_list<coordinate>{init_coord}, init_move));
-    }
+    stack.push_back(ds::array_list<coordinate>{init_coord});
 
     while (!stack.empty()) {
-        coordinate current_coord = stack.back().second;
-        ds::array_list<coordinate> current_previous_moves = stack.back().first;
+        ds::array_list<coordinate> current_coordinates = stack.back();
 
         stack.pop_back();
 
-        if (current_previous_moves.size() == row_length * column_length - 1) {
-            solution = ds::array_list<coordinate>(current_previous_moves);
-            solution.push_back(current_coord);
+        if (current_coordinates.size() == row_length * column_length) {
+            solution = current_coordinates;
             return true;
         }
 
-        ds::array_list<coordinate> possible_moves = calculate_possible_moves(current_previous_moves, current_coord);
+        ds::array_list<coordinate> possible_moves = calculate_possible_moves(current_coordinates);
 
         if (possible_moves.size() != 0) {
-            /* Take the move by push all possible moves on the stack */
-            auto next_previous_moves = current_previous_moves;
-            next_previous_moves.push_back(current_coord);
-            
+            /* Push all possible moves onto the stack */
             for (const auto &possible_move : possible_moves) {
-                stack.push_back(std::make_pair(next_previous_moves, possible_move));
+                auto next_current_coordinates = current_coordinates;
+                next_current_coordinates.push_back(possible_move);
+                stack.push_back(next_current_coordinates);
             }
         }
     }

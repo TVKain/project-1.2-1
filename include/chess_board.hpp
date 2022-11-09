@@ -34,7 +34,7 @@ private:
      * @return: 
      *        ds::array_list<coordinate> contains all possible moves
      * ******************************************************* */
-    ds::array_list<coordinate> calculate_possible_moves(ds::array_list<coordinate>, coordinate);
+    ds::array_list<coordinate> calculate_possible_moves(ds::array_list<coordinate>);
 
 public:
     /* Getters for row and column length */

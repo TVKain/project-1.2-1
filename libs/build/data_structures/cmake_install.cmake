@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/tvkain/Desktop/project-1/libs/data_structures
+# Install script for directory: /mnt/c/Users/tvkain/Desktop/project-1.3/libs/data_structures
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,7 +1,7 @@
 #include "merge_sort.hpp"
 #include "array_list.hpp"
 #include <algorithm>
-#include <iostream>
+#include <functional>
 
 int main() 
 {
@@ -11,9 +11,19 @@ int main()
 
     ds::array_list<int> b = {8, 9, 3, -100, 20, 15, 22, 23, 24, 25, 9};
 
-    algo::sort::merge_sort_iterative(b.begin(), b.end());
+    ds::array_list<int> c(b);
+    ds::array_list<int> d(b);
+
+    algo::sort::merge_sort_iterative(b.begin(), b.end(), std::greater<int>());
     
-    if (!std::is_sorted(a.begin(), a.end()) || !std::is_sorted(b.begin(), b.end())) {
+    if (!std::is_sorted(a.begin(), a.end()) || !std::is_sorted(b.begin(), b.end(), std::greater<int>())) {
+        return 1;
+    }
+
+    algo::sort::merge_sort_recursive(c.begin(), c.end());
+    algo::sort::merge_sort_recursive(d.begin(), d.end(), std::greater<int>());
+
+    if (!std::is_sorted(c.begin(), c.end()) || !std::is_sorted(d.begin(), d.end(), std::greater<int>())) {
         return 1;
     }
 

@@ -1,7 +1,21 @@
 # ninja log v5
-65	976	1667273793756429000	test/CMakeFiles/array_list_test.dir/array_list_test.cpp.o	a1008bd63b49dbff
-1080	1643	1667273794440657200	test/array_list_test	5ec69425271b55be
-58	1853	1667273794627042900	test/CMakeFiles/insertion_sort_test.dir/insertion_sort_test.cpp.o	71897ff3950a5c13
-54	2221	1667273795015022500	test/CMakeFiles/merge_sort_test.dir/merge_sort_test.cpp.o	2ad0070823ac1fb6
-1870	2378	1667273795173534500	test/insertion_sort_test	9b0bf2bb8266359e
-2243	2701	1667273795501380200	test/merge_sort_test	cb336f582d1c3988
+215	4785	1668830515713309500	test/CMakeFiles/array_list_test.dir/array_list_test.cpp.o	7f45d11b64e5cd8f
+197	4966	1668830515800290500	test/CMakeFiles/merge_sort_test.dir/merge_sort_test.cpp.o	66b857543810661e
+208	5019	1668830515800290500	test/CMakeFiles/insertion_sort_test.dir/insertion_sort_test.cpp.o	5ff0aa7c47403481
+220	5071	1668830515779812500	test/CMakeFiles/linked_list_test.dir/linked_list_test.cpp.o	d65ca964c2ad698a
+181	5136	1668830515927959300	test/CMakeFiles/quick_sort_test.dir/quick_sort_test.cpp.o	cd4041b5a1200837
+167	5526	1668830516449326900	test/CMakeFiles/priority_queue_test.dir/priority_queue_test.cpp.o	49f9ed324453affa
+174	5573	1668830516451368000	test/CMakeFiles/heap_sort_test.dir/heap_sort_test.cpp.o	9394e6cafc069494
+187	5616	1668830516495674600	test/CMakeFiles/bubble_sort_test.dir/bubble_sort_test.cpp.o	b22f9d731f955bd
+191	5664	1668830516479799600	test/CMakeFiles/heap_test.dir/heap_test.cpp.o	4207b84f0abb221b
+5101	6114	1668830517041357700	test/linked_list_test	4a377a3464f4e44d
+4949	6176	1668830517103142100	test/array_list_test	5ec69425271b55be
+5041	6302	1668830517234434200	test/insertion_sort_test	9b0bf2bb8266359e
+4998	6326	1668830517254088400	test/merge_sort_test	cb336f582d1c3988
+5167	6505	1668830517436976400	test/quick_sort_test	a7fd37f2eb3ea72b
+5591	6771	1668830517704455300	test/heap_sort_test	bf541398cc93d238
+5638	6776	1668830517711540000	test/bubble_sort_test	dec2fc93b09c4b17
+5549	6802	1668830517742641100	test/priority_queue_test	7fa46ebea0262577
+5694	6856	1668830517795658000	test/heap_test	8fc4477d46a4249f
+162	7656	1668830518581672200	test/CMakeFiles/undirected_graph_test.dir/undirected_graph_test.cpp.o	416dfd0046641ed0
+7682	8237	1668830519171547300	test/undirected_graph_test	39a7827ad0433577

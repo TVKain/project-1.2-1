@@ -34,7 +34,7 @@ include rules.ninja
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/c/Users/tvkain/Desktop/project-1/libs/build && /usr/bin/cmake -S/mnt/c/Users/tvkain/Desktop/project-1/libs -B/mnt/c/Users/tvkain/Desktop/project-1/libs/build
+  COMMAND = cd /mnt/c/Users/tvkain/Desktop/project-1.3/libs/build && /usr/bin/cmake -S/mnt/c/Users/tvkain/Desktop/project-1.3/libs -B/mnt/c/Users/tvkain/Desktop/project-1.3/libs/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -46,7 +46,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/c/Users/tvkain/Desktop/project-1/libs/build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /mnt/c/Users/tvkain/Desktop/project-1.3/libs/build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -57,7 +57,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for test
 
 build CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/c/Users/tvkain/Desktop/project-1/libs/build && /usr/bin/ctest --force-new-ctest-process
+  COMMAND = cd /mnt/c/Users/tvkain/Desktop/project-1.3/libs/build && /usr/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -66,7 +66,7 @@ build test: phony CMakeFiles/test.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /mnt/c/Users/tvkain/Desktop/project-1/libs/CMakeLists.txt
+# /mnt/c/Users/tvkain/Desktop/project-1.3/libs/CMakeLists.txt
 # =============================================================================
 
 
@@ -74,7 +74,7 @@ build test: phony CMakeFiles/test.util
 # Utility command for rebuild_cache
 
 build algorithms/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/c/Users/tvkain/Desktop/project-1/libs/build/algorithms && /usr/bin/cmake -S/mnt/c/Users/tvkain/Desktop/project-1/libs -B/mnt/c/Users/tvkain/Desktop/project-1/libs/build
+  COMMAND = cd /mnt/c/Users/tvkain/Desktop/project-1.3/libs/build/algorithms && /usr/bin/cmake -S/mnt/c/Users/tvkain/Desktop/project-1.3/libs -B/mnt/c/Users/tvkain/Desktop/project-1.3/libs/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -86,7 +86,7 @@ build algorithms/rebuild_cache: phony algorithms/CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build algorithms/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/c/Users/tvkain/Desktop/project-1/libs/build/algorithms && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /mnt/c/Users/tvkain/Desktop/project-1.3/libs/build/algorithms && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -97,7 +97,7 @@ build algorithms/edit_cache: phony algorithms/CMakeFiles/edit_cache.util
 # Utility command for test
 
 build algorithms/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/c/Users/tvkain/Desktop/project-1/libs/build/algorithms && /usr/bin/ctest --force-new-ctest-process
+  COMMAND = cd /mnt/c/Users/tvkain/Desktop/project-1.3/libs/build/algorithms && /usr/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -106,7 +106,7 @@ build algorithms/test: phony algorithms/CMakeFiles/test.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /mnt/c/Users/tvkain/Desktop/project-1/libs/CMakeLists.txt
+# /mnt/c/Users/tvkain/Desktop/project-1.3/libs/CMakeLists.txt
 # =============================================================================
 
 
@@ -114,7 +114,7 @@ build algorithms/test: phony algorithms/CMakeFiles/test.util
 # Utility command for rebuild_cache
 
 build data_structures/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/c/Users/tvkain/Desktop/project-1/libs/build/data_structures && /usr/bin/cmake -S/mnt/c/Users/tvkain/Desktop/project-1/libs -B/mnt/c/Users/tvkain/Desktop/project-1/libs/build
+  COMMAND = cd /mnt/c/Users/tvkain/Desktop/project-1.3/libs/build/data_structures && /usr/bin/cmake -S/mnt/c/Users/tvkain/Desktop/project-1.3/libs -B/mnt/c/Users/tvkain/Desktop/project-1.3/libs/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -126,7 +126,7 @@ build data_structures/rebuild_cache: phony data_structures/CMakeFiles/rebuild_ca
 # Utility command for edit_cache
 
 build data_structures/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/c/Users/tvkain/Desktop/project-1/libs/build/data_structures && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /mnt/c/Users/tvkain/Desktop/project-1.3/libs/build/data_structures && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -137,7 +137,7 @@ build data_structures/edit_cache: phony data_structures/CMakeFiles/edit_cache.ut
 # Utility command for test
 
 build data_structures/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/c/Users/tvkain/Desktop/project-1/libs/build/data_structures && /usr/bin/ctest --force-new-ctest-process
+  COMMAND = cd /mnt/c/Users/tvkain/Desktop/project-1.3/libs/build/data_structures && /usr/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -146,27 +146,15 @@ build data_structures/test: phony data_structures/CMakeFiles/test.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /mnt/c/Users/tvkain/Desktop/project-1/libs/CMakeLists.txt
+# /mnt/c/Users/tvkain/Desktop/project-1.3/libs/CMakeLists.txt
 # =============================================================================
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build test/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/c/Users/tvkain/Desktop/project-1/libs/build/test && /usr/bin/cmake -S/mnt/c/Users/tvkain/Desktop/project-1/libs -B/mnt/c/Users/tvkain/Desktop/project-1/libs/build
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build test/rebuild_cache: phony test/CMakeFiles/rebuild_cache.util
 
 
 #############################################
 # Utility command for edit_cache
 
 build test/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/c/Users/tvkain/Desktop/project-1/libs/build/test && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /mnt/c/Users/tvkain/Desktop/project-1.3/libs/build/test && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -177,12 +165,216 @@ build test/edit_cache: phony test/CMakeFiles/edit_cache.util
 # Utility command for test
 
 build test/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/c/Users/tvkain/Desktop/project-1/libs/build/test && /usr/bin/ctest --force-new-ctest-process
+  COMMAND = cd /mnt/c/Users/tvkain/Desktop/project-1.3/libs/build/test && /usr/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
 
 build test/test: phony test/CMakeFiles/test.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target undirected_graph_test
+
+
+#############################################
+# Order-only phony target for undirected_graph_test
+
+build cmake_object_order_depends_target_undirected_graph_test: phony || test/CMakeFiles/undirected_graph_test.dir
+
+build test/CMakeFiles/undirected_graph_test.dir/undirected_graph_test.cpp.o: CXX_COMPILER__undirected_graph_test ../test/undirected_graph_test.cpp || cmake_object_order_depends_target_undirected_graph_test
+  DEP_FILE = test/CMakeFiles/undirected_graph_test.dir/undirected_graph_test.cpp.o.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -I../data_structures/include/array_list -I../data_structures/include/priority_queue -I../data_structures/include/graph -I../data_structures/include/linked_list -I../algorithms/include/heap -I../algorithms/include/sorting
+  OBJECT_DIR = test/CMakeFiles/undirected_graph_test.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/undirected_graph_test.dir
+  TARGET_COMPILE_PDB = test/CMakeFiles/undirected_graph_test.dir/
+  TARGET_PDB = test/undirected_graph_test.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target undirected_graph_test
+
+
+#############################################
+# Link the executable test/undirected_graph_test
+
+build test/undirected_graph_test: CXX_EXECUTABLE_LINKER__undirected_graph_test test/CMakeFiles/undirected_graph_test.dir/undirected_graph_test.cpp.o
+  OBJECT_DIR = test/CMakeFiles/undirected_graph_test.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = test/CMakeFiles/undirected_graph_test.dir/
+  TARGET_FILE = test/undirected_graph_test
+  TARGET_PDB = test/undirected_graph_test.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target priority_queue_test
+
+
+#############################################
+# Order-only phony target for priority_queue_test
+
+build cmake_object_order_depends_target_priority_queue_test: phony || test/CMakeFiles/priority_queue_test.dir
+
+build test/CMakeFiles/priority_queue_test.dir/priority_queue_test.cpp.o: CXX_COMPILER__priority_queue_test ../test/priority_queue_test.cpp || cmake_object_order_depends_target_priority_queue_test
+  DEP_FILE = test/CMakeFiles/priority_queue_test.dir/priority_queue_test.cpp.o.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -I../data_structures/include/array_list -I../data_structures/include/priority_queue -I../data_structures/include/graph -I../data_structures/include/linked_list -I../algorithms/include/heap -I../algorithms/include/sorting
+  OBJECT_DIR = test/CMakeFiles/priority_queue_test.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/priority_queue_test.dir
+  TARGET_COMPILE_PDB = test/CMakeFiles/priority_queue_test.dir/
+  TARGET_PDB = test/priority_queue_test.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target priority_queue_test
+
+
+#############################################
+# Link the executable test/priority_queue_test
+
+build test/priority_queue_test: CXX_EXECUTABLE_LINKER__priority_queue_test test/CMakeFiles/priority_queue_test.dir/priority_queue_test.cpp.o
+  OBJECT_DIR = test/CMakeFiles/priority_queue_test.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = test/CMakeFiles/priority_queue_test.dir/
+  TARGET_FILE = test/priority_queue_test
+  TARGET_PDB = test/priority_queue_test.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target heap_sort_test
+
+
+#############################################
+# Order-only phony target for heap_sort_test
+
+build cmake_object_order_depends_target_heap_sort_test: phony || test/CMakeFiles/heap_sort_test.dir
+
+build test/CMakeFiles/heap_sort_test.dir/heap_sort_test.cpp.o: CXX_COMPILER__heap_sort_test ../test/heap_sort_test.cpp || cmake_object_order_depends_target_heap_sort_test
+  DEP_FILE = test/CMakeFiles/heap_sort_test.dir/heap_sort_test.cpp.o.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -I../algorithms/include/heap -I../algorithms/include/sorting -I../data_structures/include/array_list -I../data_structures/include/priority_queue -I../data_structures/include/graph -I../data_structures/include/linked_list
+  OBJECT_DIR = test/CMakeFiles/heap_sort_test.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/heap_sort_test.dir
+  TARGET_COMPILE_PDB = test/CMakeFiles/heap_sort_test.dir/
+  TARGET_PDB = test/heap_sort_test.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target heap_sort_test
+
+
+#############################################
+# Link the executable test/heap_sort_test
+
+build test/heap_sort_test: CXX_EXECUTABLE_LINKER__heap_sort_test test/CMakeFiles/heap_sort_test.dir/heap_sort_test.cpp.o
+  OBJECT_DIR = test/CMakeFiles/heap_sort_test.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = test/CMakeFiles/heap_sort_test.dir/
+  TARGET_FILE = test/heap_sort_test
+  TARGET_PDB = test/heap_sort_test.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target quick_sort_test
+
+
+#############################################
+# Order-only phony target for quick_sort_test
+
+build cmake_object_order_depends_target_quick_sort_test: phony || test/CMakeFiles/quick_sort_test.dir
+
+build test/CMakeFiles/quick_sort_test.dir/quick_sort_test.cpp.o: CXX_COMPILER__quick_sort_test ../test/quick_sort_test.cpp || cmake_object_order_depends_target_quick_sort_test
+  DEP_FILE = test/CMakeFiles/quick_sort_test.dir/quick_sort_test.cpp.o.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -I../algorithms/include/heap -I../algorithms/include/sorting -I../data_structures/include/array_list -I../data_structures/include/priority_queue -I../data_structures/include/graph -I../data_structures/include/linked_list
+  OBJECT_DIR = test/CMakeFiles/quick_sort_test.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/quick_sort_test.dir
+  TARGET_COMPILE_PDB = test/CMakeFiles/quick_sort_test.dir/
+  TARGET_PDB = test/quick_sort_test.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target quick_sort_test
+
+
+#############################################
+# Link the executable test/quick_sort_test
+
+build test/quick_sort_test: CXX_EXECUTABLE_LINKER__quick_sort_test test/CMakeFiles/quick_sort_test.dir/quick_sort_test.cpp.o
+  OBJECT_DIR = test/CMakeFiles/quick_sort_test.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = test/CMakeFiles/quick_sort_test.dir/
+  TARGET_FILE = test/quick_sort_test
+  TARGET_PDB = test/quick_sort_test.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target bubble_sort_test
+
+
+#############################################
+# Order-only phony target for bubble_sort_test
+
+build cmake_object_order_depends_target_bubble_sort_test: phony || test/CMakeFiles/bubble_sort_test.dir
+
+build test/CMakeFiles/bubble_sort_test.dir/bubble_sort_test.cpp.o: CXX_COMPILER__bubble_sort_test ../test/bubble_sort_test.cpp || cmake_object_order_depends_target_bubble_sort_test
+  DEP_FILE = test/CMakeFiles/bubble_sort_test.dir/bubble_sort_test.cpp.o.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -I../data_structures/include/array_list -I../data_structures/include/priority_queue -I../data_structures/include/graph -I../data_structures/include/linked_list -I../algorithms/include/heap -I../algorithms/include/sorting
+  OBJECT_DIR = test/CMakeFiles/bubble_sort_test.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/bubble_sort_test.dir
+  TARGET_COMPILE_PDB = test/CMakeFiles/bubble_sort_test.dir/
+  TARGET_PDB = test/bubble_sort_test.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target bubble_sort_test
+
+
+#############################################
+# Link the executable test/bubble_sort_test
+
+build test/bubble_sort_test: CXX_EXECUTABLE_LINKER__bubble_sort_test test/CMakeFiles/bubble_sort_test.dir/bubble_sort_test.cpp.o
+  OBJECT_DIR = test/CMakeFiles/bubble_sort_test.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = test/CMakeFiles/bubble_sort_test.dir/
+  TARGET_FILE = test/bubble_sort_test
+  TARGET_PDB = test/bubble_sort_test.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target heap_test
+
+
+#############################################
+# Order-only phony target for heap_test
+
+build cmake_object_order_depends_target_heap_test: phony || test/CMakeFiles/heap_test.dir
+
+build test/CMakeFiles/heap_test.dir/heap_test.cpp.o: CXX_COMPILER__heap_test ../test/heap_test.cpp || cmake_object_order_depends_target_heap_test
+  DEP_FILE = test/CMakeFiles/heap_test.dir/heap_test.cpp.o.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -I../algorithms/include/heap -I../algorithms/include/sorting -I../data_structures/include/array_list -I../data_structures/include/priority_queue -I../data_structures/include/graph -I../data_structures/include/linked_list
+  OBJECT_DIR = test/CMakeFiles/heap_test.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/heap_test.dir
+  TARGET_COMPILE_PDB = test/CMakeFiles/heap_test.dir/
+  TARGET_PDB = test/heap_test.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target heap_test
+
+
+#############################################
+# Link the executable test/heap_test
+
+build test/heap_test: CXX_EXECUTABLE_LINKER__heap_test test/CMakeFiles/heap_test.dir/heap_test.cpp.o
+  OBJECT_DIR = test/CMakeFiles/heap_test.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = test/CMakeFiles/heap_test.dir/
+  TARGET_FILE = test/heap_test
+  TARGET_PDB = test/heap_test.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target merge_sort_test
@@ -195,7 +387,8 @@ build cmake_object_order_depends_target_merge_sort_test: phony || test/CMakeFile
 
 build test/CMakeFiles/merge_sort_test.dir/merge_sort_test.cpp.o: CXX_COMPILER__merge_sort_test ../test/merge_sort_test.cpp || cmake_object_order_depends_target_merge_sort_test
   DEP_FILE = test/CMakeFiles/merge_sort_test.dir/merge_sort_test.cpp.o.d
-  INCLUDES = -I../algorithms/include/heap -I../algorithms/include/sorting -I../data_structures/include/array_list
+  FLAGS = -std=gnu++17
+  INCLUDES = -I../algorithms/include/heap -I../algorithms/include/sorting -I../data_structures/include/array_list -I../data_structures/include/priority_queue -I../data_structures/include/graph -I../data_structures/include/linked_list
   OBJECT_DIR = test/CMakeFiles/merge_sort_test.dir
   OBJECT_FILE_DIR = test/CMakeFiles/merge_sort_test.dir
   TARGET_COMPILE_PDB = test/CMakeFiles/merge_sort_test.dir/
@@ -228,7 +421,8 @@ build cmake_object_order_depends_target_insertion_sort_test: phony || test/CMake
 
 build test/CMakeFiles/insertion_sort_test.dir/insertion_sort_test.cpp.o: CXX_COMPILER__insertion_sort_test ../test/insertion_sort_test.cpp || cmake_object_order_depends_target_insertion_sort_test
   DEP_FILE = test/CMakeFiles/insertion_sort_test.dir/insertion_sort_test.cpp.o.d
-  INCLUDES = -I../algorithms/include/heap -I../algorithms/include/sorting -I../data_structures/include/array_list
+  FLAGS = -std=gnu++17
+  INCLUDES = -I../algorithms/include/heap -I../algorithms/include/sorting -I../data_structures/include/array_list -I../data_structures/include/priority_queue -I../data_structures/include/graph -I../data_structures/include/linked_list
   OBJECT_DIR = test/CMakeFiles/insertion_sort_test.dir
   OBJECT_FILE_DIR = test/CMakeFiles/insertion_sort_test.dir
   TARGET_COMPILE_PDB = test/CMakeFiles/insertion_sort_test.dir/
@@ -261,7 +455,8 @@ build cmake_object_order_depends_target_array_list_test: phony || test/CMakeFile
 
 build test/CMakeFiles/array_list_test.dir/array_list_test.cpp.o: CXX_COMPILER__array_list_test ../test/array_list_test.cpp || cmake_object_order_depends_target_array_list_test
   DEP_FILE = test/CMakeFiles/array_list_test.dir/array_list_test.cpp.o.d
-  INCLUDES = -I../data_structures/include/array_list
+  FLAGS = -std=gnu++17
+  INCLUDES = -I../data_structures/include/array_list -I../data_structures/include/priority_queue -I../data_structures/include/graph -I../data_structures/include/linked_list -I../algorithms/include/heap -I../algorithms/include/sorting
   OBJECT_DIR = test/CMakeFiles/array_list_test.dir
   OBJECT_FILE_DIR = test/CMakeFiles/array_list_test.dir
   TARGET_COMPILE_PDB = test/CMakeFiles/array_list_test.dir/
@@ -283,14 +478,74 @@ build test/array_list_test: CXX_EXECUTABLE_LINKER__array_list_test test/CMakeFil
   TARGET_FILE = test/array_list_test
   TARGET_PDB = test/array_list_test.pdb
 
+
+#############################################
+# Utility command for rebuild_cache
+
+build test/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /mnt/c/Users/tvkain/Desktop/project-1.3/libs/build/test && /usr/bin/cmake -S/mnt/c/Users/tvkain/Desktop/project-1.3/libs -B/mnt/c/Users/tvkain/Desktop/project-1.3/libs/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build test/rebuild_cache: phony test/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target linked_list_test
+
+
+#############################################
+# Order-only phony target for linked_list_test
+
+build cmake_object_order_depends_target_linked_list_test: phony || test/CMakeFiles/linked_list_test.dir
+
+build test/CMakeFiles/linked_list_test.dir/linked_list_test.cpp.o: CXX_COMPILER__linked_list_test ../test/linked_list_test.cpp || cmake_object_order_depends_target_linked_list_test
+  DEP_FILE = test/CMakeFiles/linked_list_test.dir/linked_list_test.cpp.o.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -I../data_structures/include/array_list -I../data_structures/include/priority_queue -I../data_structures/include/graph -I../data_structures/include/linked_list -I../algorithms/include/heap -I../algorithms/include/sorting
+  OBJECT_DIR = test/CMakeFiles/linked_list_test.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/linked_list_test.dir
+  TARGET_COMPILE_PDB = test/CMakeFiles/linked_list_test.dir/
+  TARGET_PDB = test/linked_list_test.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target linked_list_test
+
+
+#############################################
+# Link the executable test/linked_list_test
+
+build test/linked_list_test: CXX_EXECUTABLE_LINKER__linked_list_test test/CMakeFiles/linked_list_test.dir/linked_list_test.cpp.o
+  OBJECT_DIR = test/CMakeFiles/linked_list_test.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = test/CMakeFiles/linked_list_test.dir/
+  TARGET_FILE = test/linked_list_test
+  TARGET_PDB = test/linked_list_test.pdb
+
 # =============================================================================
 # Target aliases.
 
 build array_list_test: phony test/array_list_test
 
+build bubble_sort_test: phony test/bubble_sort_test
+
+build heap_sort_test: phony test/heap_sort_test
+
+build heap_test: phony test/heap_test
+
 build insertion_sort_test: phony test/insertion_sort_test
 
+build linked_list_test: phony test/linked_list_test
+
 build merge_sort_test: phony test/merge_sort_test
+
+build priority_queue_test: phony test/priority_queue_test
+
+build quick_sort_test: phony test/quick_sort_test
+
+build undirected_graph_test: phony test/undirected_graph_test
 
 # =============================================================================
 # Folder targets.
@@ -298,30 +553,30 @@ build merge_sort_test: phony test/merge_sort_test
 # =============================================================================
 
 #############################################
-# Folder: /mnt/c/Users/tvkain/Desktop/project-1/libs/build
+# Folder: /mnt/c/Users/tvkain/Desktop/project-1.3/libs/build
 
 build all: phony algorithms/all data_structures/all test/all
 
 # =============================================================================
 
 #############################################
-# Folder: /mnt/c/Users/tvkain/Desktop/project-1/libs/build/algorithms
+# Folder: /mnt/c/Users/tvkain/Desktop/project-1.3/libs/build/algorithms
 
 build algorithms/all: phony
 
 # =============================================================================
 
 #############################################
-# Folder: /mnt/c/Users/tvkain/Desktop/project-1/libs/build/data_structures
+# Folder: /mnt/c/Users/tvkain/Desktop/project-1.3/libs/build/data_structures
 
 build data_structures/all: phony
 
 # =============================================================================
 
 #############################################
-# Folder: /mnt/c/Users/tvkain/Desktop/project-1/libs/build/test
+# Folder: /mnt/c/Users/tvkain/Desktop/project-1.3/libs/build/test
 
-build test/all: phony test/merge_sort_test test/insertion_sort_test test/array_list_test
+build test/all: phony test/undirected_graph_test test/priority_queue_test test/heap_sort_test test/quick_sort_test test/bubble_sort_test test/heap_test test/merge_sort_test test/insertion_sort_test test/array_list_test test/linked_list_test
 
 # =============================================================================
 # Built-in targets

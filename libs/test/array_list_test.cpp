@@ -1,34 +1,20 @@
-#include "array_list.hpp"
+#include "array_list_fix.hpp"
+#include <iostream>
 
 int main() {
-    ds::array_list<int> a = {1,2,3,4};
+    array_list<array_list<int>> a;
 
-    if (a.size() != 4) {
-        return 1;
-    }
+    array_list<int> b;
+    b.push_back(4);
+    b.push_back(5);
 
-    if (a.at(0) != 1) {
-        return 1;
-    }
+    array_list<int> c;
+    c.push_back(10);
 
-    a.clear();
+    a.push_back(b);
+    a.push_back(c);
 
-    if (a.size() != 0) {
-        return 1;
-    }
-
-    a.push_back(4);
-    a.push_back(2);
-    a.push_back(69);
-
-    if (a.size() != 3) {
-        return 1;
-    }
-
-    if (a[1] != 2) {
-        return 1;
-    }
-
+    a.pop_back();
 
     return 0;
 }

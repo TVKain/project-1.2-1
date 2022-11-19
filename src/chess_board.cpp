@@ -28,7 +28,7 @@ void chess_board::resize_board(int m, int n) {
 }
 
 ds::array_list<chess_board::coordinate> chess_board::calculate_possible_moves(ds::array_list<chess_board::coordinate> current_coordinates) {
-    ds::array_list<coordinate> possible_offsets = { {1, 2}, {2, 1}, {2, -1}, {1, -2}, {-1, -2}, {-2, -1}, {-2, 1}, {-1, 2} };
+    ds::array_list<coordinate> possible_offsets = { {2, 1}, {1, 2}, {-1, 2}, {-2, 1}, {-2, -1}, {-1, -2}, {1, -2}, {2, -1} };
     ds::array_list<coordinate> possible_moves; 
 
     auto current_coord = current_coordinates.back();
@@ -65,13 +65,10 @@ bool chess_board::knight_tour_solve(coordinate init_coord) {
 
         ds::array_list<coordinate> possible_moves = calculate_possible_moves(current_coordinates);
 
-        if (possible_moves.size() != 0) {
-            /* Push all possible moves onto the stack */
-            for (const auto &possible_move : possible_moves) {
-                auto next_current_coordinates = current_coordinates;
-                next_current_coordinates.push_back(possible_move);
-                stack.push_back(next_current_coordinates);
-            }
+        for (int i = possible_moves.size() - 1; i >= 0; --i) {
+            auto next_current_coordinates = current_coordinates;
+            next_current_coordinates.push_back(possible_moves[i]);
+            stack.push_back(next_current_coordinates);
         }
     }
 
